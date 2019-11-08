@@ -1,4 +1,4 @@
-# AirSaver
+# AirSaver - Smart Home Application
 
 ## Student Name: Grace Finnerty    
 ## Student ID: 20086644
@@ -9,6 +9,10 @@ I tend to leave the AC on in my apartment quite often, wasting energy and money.
 ## Tools, Technologies and Equipment
 
 * Rasperberry Pi 
+* Putty
+* Wireless Network Watcher
+* IntelliJ
+* Vagrant
 * Sense Hat with Temperature Sensor
 * Python Program which senses the room temperature 
 * Python Program which recongines my phones MAC address
