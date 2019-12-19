@@ -1,7 +1,10 @@
 # AirSaver - Smart Home Application
+![alt text](https://github.com/gracesfinn/AirSaver/blob/master/logo.PNG?raw=true "Logo Title Text 1")
 
 ## Student Name: Grace Finnerty    
 ## Student ID: 20086644
+
+
 
 
 AirSaver is a program that senses the temperature in your apartment! Cool, huh? (excuse the pun)
