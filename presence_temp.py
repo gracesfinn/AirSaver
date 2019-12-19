@@ -1,9 +1,7 @@
 #!/usr/bin/env python coding=utf-8
 
 import subprocess
-
 import logging
-
 import urllib2
 import  json
 import  time
@@ -12,15 +10,12 @@ logging.basicConfig(filename='/home/pi/AirSaver/presence-detector.log',level=log
 logging.info('Starting presence detector')
 
 from sense_hat import SenseHat
-
 from time import sleep
 
 WRITE_API_KEY='F5GSNHD01VIEIAU3'
 
 baseURL='https://api.thingspeak.com/update?api_key=%s' % WRITE_API_KEY
 
-
-sense = SenseHat()
 
 #Names of device owners
 names = ["Grace"]
@@ -30,9 +25,10 @@ macs = ["24:f0:94:d1:9a:e1"]
 
 #Temperature from SenseHat
 from sense_hat import SenseHat
-
 sense = SenseHat()
 sense.clear()
+
+#Defining colour for the text on the LED screen
 blue = (0,128,128)
 
 
