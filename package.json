@@ -1,0 +1,29 @@
+{
+  "name": "blynk-lab",
+  "version": "1.0.0",
+  "description": "## Student Name: Grace Finnerty     ## Student ID: 20086644",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grace S Finnerty",
+  "license": "ISC",
+  "dependencies": {
+    "blynk-library": "^0.5.4",
+    "node-sense-hat": "0.0.2",
+    "onoff": "^5.0.0",
+    "wia": "^1.4.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gracesfinn/AirSaver.git"
+  },
+  "keywords": [
+    "Blynk"
+  ],
+  "bugs": {
+    "url": "https://github.com/gracesfinn/AirSaver/issues"
+  },
+  "homepage": "https://github.com/gracesfinn/AirSaver#readme"
+}
