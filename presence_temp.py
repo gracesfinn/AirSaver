@@ -42,10 +42,10 @@ def arp_scan():
 			temp = sense.get_temperature()
                         if (macs[i] in output and temp <=39):
                                 result=result+" is home and AC is on"
-				tsFlag = 0
+				tsFlag = 0 #ThingSpeak Flag for 0
                         else:
                                 result=result+" is not home - Auto AC shutdown"
-				tsFlag = 1
+				tsFlag = 1 #ThingSpeak Flag which will send a tweet to ThingSpeak and then to the sudo HTTP "AC Unit"
                         print(result)
                         sense.show_message(result, text_colour = blue)
 			return tsFlag
@@ -53,7 +53,7 @@ def arp_scan():
                 logging.error(e)
 
 
-#ThinkSpeak Code - needs work!
+#ThingSpeak Code
 def writeData(tsFlag):
     # Sending the data to thingspeak in the query string
     conn = urllib2.urlopen(baseURL + '&field1=%s' % (tsFlag))

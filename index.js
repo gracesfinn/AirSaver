@@ -8,17 +8,17 @@ var AUTH = 'r8FMCRRE_aCKSjblNMc6xxJucgO0fm0Q';
 
 var blynk = new Blynk.Blynk(AUTH);
 
-var v1 = new blynk.VirtualPin(1);
+
 var v2 = new blynk.VirtualPin(2);
 var v3 = new blynk.VirtualPin(3);
-var v4 = new blynk.VirtualPin(4);
+
 
 var white = [255, 255, 255];
 sense.Leds.clear();
 
 var wia = require('wia')('d_sk_VLdArRU3IwmPa6o6eJp4yTfV');
 
-// v1 write call back
+// v1 sends temperature data to the Blynk App
 
 
 v2.on('read', function() {
@@ -27,7 +27,7 @@ v2.on('read', function() {
   })
 });
 
-
+// v3 is connected to a button on the app which when press will cause the pi to light up and will notify the pi to be switched on 
 v3.on('write', function(param) {
   console.log('V3:', param[0]);
   if (param[0]==1){
